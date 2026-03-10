@@ -1,8 +1,8 @@
 ## MemberLens.Attributes
 
-Provides `MemberAccessorAttribute` for the **MemberLens** VS extension.
+Provides MemberAccessorAttribute for the **MemberLens** VS extension.
 
-This NuGet package lets you decorate `string` parameters so they receive autocomplete suggestions for public and private member names of a given type.
+This NuGet package lets you decorate string parameters so they receive autocomplete suggestions for public and private member names of a given type.
 
 ---
 ### Usage
@@ -52,17 +52,17 @@ public class Test4 {
 #### Constructor Overloads
 | Overload | Description |
 |---|---|
-| `MemberAccessor(AccessorType, Type)` | Members from an explicit type |
-| `MemberAccessor(AccessorType, GenericSource, int index)` | Members from a generic type parameter |
+| MemberAccessor(AccessorType, Type) | Members from an explicit type |
+| MemberAccessor(AccessorType, GenericSource, int index) | Members from a generic type parameter |
 
-#### `AccessorType`
+#### AccessorType
 | Value | Description |
 |---|---|
-| `Field` | Instance and static fields |
-| `Method` | Instance and static methods |
+| Field | Instance and static fields |
+| Method | Instance and static methods |
 
-#### `GenericSource`
+#### GenericSource
 | Value | Description |
 |---|---|
-| `Class` | Generic parameter from the containing class |
-| `Method` | Generic parameter from the containing method |
+| Class | Generic parameter from the containing class |
+| Method | Generic parameter from the containing method |
