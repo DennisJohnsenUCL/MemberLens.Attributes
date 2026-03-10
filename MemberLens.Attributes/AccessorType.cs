@@ -3,7 +3,7 @@
     /// <summary>
     /// Determines what types of members the MemberAccessor parameter should provide autocomplete suggestions for.
     /// </summary>
-    public enum AccessorTypes
+    public enum AccessorType
     {
         /// <summary>
         /// Fields on the source type

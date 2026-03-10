@@ -11,9 +11,9 @@
     [AttributeUsage(AttributeTargets.Parameter)]
     public class MemberAccessorAttribute : Attribute
     {
-        public AccessorTypes AccessorTypes { get; }
+        public AccessorType AccessorTypes { get; }
         public Type? Type { get; }
-        public GenericSources? GenericSources { get; }
+        public GenericSource? GenericSources { get; }
         public int? GenericIndex { get; }
 
         /// <summary>
@@ -21,7 +21,7 @@
         /// </summary>
         /// <param name="accessorTypes">The member type.</param>
         /// <param name="type">The source type of the member names.</param>
-        public MemberAccessorAttribute(AccessorTypes accessorTypes, Type type)
+        public MemberAccessorAttribute(AccessorType accessorTypes, Type type)
         {
             AccessorTypes = accessorTypes;
             Type = type;
@@ -33,7 +33,7 @@
         /// <param name="accessorTypes">The member type.</param>
         /// <param name="genericSource">The source of the generic parameter.</param>
         /// <param name="genericIndex">The index of the generic parameter.</param>
-        public MemberAccessorAttribute(AccessorTypes accessorTypes, GenericSources genericSource, int genericIndex)
+        public MemberAccessorAttribute(AccessorType accessorTypes, GenericSource genericSource, int genericIndex)
         {
             AccessorTypes = accessorTypes;
             GenericSources = genericSource;
